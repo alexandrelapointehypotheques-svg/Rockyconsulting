@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rockyconsulting.ca/sitemap.xml

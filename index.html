@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocky Consulting | Conseil en redressement de PME — Éviter la faillite, restructurer, relancer</title>
+<meta name="description" content="Votre entreprise est sur les câbles? Rocky Consulting aide les dirigeants de PME à éviter la faillite, restructurer et se relever. Une équipe qui a vécu le combat de l'entreprise. Première conversation confidentielle.">
+<meta name="author" content="Rocky Consulting">
+<link rel="canonical" href="https://rockyconsulting.ca/">
+<link rel="alternate" hreflang="fr-ca" href="https://rockyconsulting.ca/">
+<link rel="alternate" hreflang="en-ca" href="https://rockyconsulting.ca/en/">
+<link rel="alternate" hreflang="x-default" href="https://rockyconsulting.ca/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rocky Consulting | Conseil en redressement de PME">
+<meta property="og:description" content="Dans votre coin quand ça cogne. Éviter la faillite, restructurer, se relever.">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:locale:alternate" content="en_CA">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#211a14;        /* cuir sombre / coin sombre */
+    --navy-deep:#15100b;
+    --gold:#c8a24a;        /* laiton, ceinture de champion */
+    --gold-soft:#e3c97f;
+    --red:#8f2c22;         /* sang de boeuf, gants */
+    --red-deep:#6f1f17;
+    --ink:#241d16;
+    --muted:#6c6052;
+    --line:#e6dcc6;
+    --paper:#f4ecda;       /* toile de ring, crème */
+    --card:#fffdf6;
+    --serif:'Oswald',Impact,sans-serif;
+    --sans:'Source Sans 3',-apple-system,Segoe UI,Roboto,sans-serif;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65;font-size:18px;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:var(--serif);line-height:1.12;color:var(--navy);font-weight:600;letter-spacing:.005em;}
+  a{color:var(--navy);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  /* header */
+  .site-header{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:2px solid var(--gold);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px;}
+  .brand{display:flex;flex-direction:row;align-items:center;gap:12px;text-decoration:none;}
+  .emblem{flex:0 0 auto;display:block;}
+  .brand-text{display:flex;flex-direction:column;line-height:1;}
+  .brand .name{font-family:var(--serif);color:#fff;font-size:1.4rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+  .brand .tag{color:var(--gold-soft);font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;margin-top:6px;}
+  .nav-links{display:flex;gap:26px;align-items:center;}
+  .nav-links a{color:#e3dccf;text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-family:var(--serif);}
+  .nav-links a:hover{color:var(--gold-soft);}
+  .nav-tools{display:flex;align-items:center;gap:14px;}
+  .lang{display:flex;border:1px solid rgba(255,255,255,.25);border-radius:999px;overflow:hidden;}
+  .lang button{background:transparent;border:0;color:#cdc4b4;padding:6px 12px;font-family:var(--serif);font-size:.78rem;font-weight:600;cursor:pointer;letter-spacing:.08em;}
+  .lang button.active{background:var(--gold);color:var(--navy-deep);}
+  .btn-call{background:var(--red);color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;font-weight:600;font-size:.82rem;white-space:nowrap;font-family:var(--serif);letter-spacing:.08em;text-transform:uppercase;}
+  .btn-call:hover{background:var(--red-deep);}
+  .burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer;}
+
+  /* hero */
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 75%);color:#fff;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 420px at 85% -10%,rgba(143,44,34,.32),transparent 60%),repeating-linear-gradient(135deg,transparent 0 40px,rgba(255,255,255,.02) 40px 41px);pointer-events:none;}
+  .hero .wrap{position:relative;padding:80px 24px 76px;max-width:920px;}
+  .eyebrow{color:var(--gold-soft);letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;font-weight:600;margin-bottom:20px;font-family:var(--serif);}
+  .hero h1{color:#fff;font-size:clamp(2.3rem,5.6vw,4rem);font-weight:700;margin:0 0 22px;text-transform:uppercase;letter-spacing:.01em;line-height:1.02;}
+  .hero h1 em{color:var(--gold);font-style:normal;}
+  .hero .lede{font-size:1.22rem;color:#e7dfd2;max-width:680px;margin:0 0 32px;font-weight:300;}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+  .btn-primary{background:var(--gold);color:var(--navy-deep);text-decoration:none;padding:15px 30px;border-radius:5px;font-weight:600;font-size:.95rem;font-family:var(--serif);letter-spacing:.08em;text-transform:uppercase;}
+  .btn-primary:hover{background:var(--gold-soft);}
+  .btn-ghost{color:#fff;text-decoration:none;padding:15px 24px;font-weight:600;font-size:.95rem;border:2px solid rgba(255,255,255,.32);border-radius:5px;font-family:var(--serif);letter-spacing:.08em;text-transform:uppercase;}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft);}
+
+  .quick-answer{background:var(--card);border-left:5px solid var(--red);padding:26px 30px;border-radius:0 8px 8px 0;box-shadow:0 10px 34px rgba(33,26,20,.12);margin:-42px auto 0;position:relative;max-width:840px;font-size:1.12rem;color:#2b2419;}
+  .quick-answer strong{color:var(--navy);}
+
+  section{padding:66px 0;}
+  .section-head{max-width:720px;margin:0 auto 44px;text-align:center;}
+  .section-head .eyebrow{color:var(--red);}
+  .section-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:0 0 14px;text-transform:uppercase;letter-spacing:.01em;}
+  .section-head p{color:var(--muted);font-size:1.1rem;margin:0;}
+
+  /* trust */
+  .trust{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .trust .wrap{display:flex;gap:18px;align-items:flex-start;padding:22px 24px;max-width:960px;}
+  .trust .ic{flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:#f1e7d2;color:var(--red);display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;font-family:var(--serif);}
+  .trust p{margin:0;color:var(--muted);font-size:.98rem;}
+  .trust strong{color:var(--navy);}
+
+  /* services */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:8px;padding:30px 26px;transition:transform .18s,box-shadow .18s;text-decoration:none;display:block;}
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(33,26,20,.13);}
+  .card .num{font-family:var(--serif);color:var(--red);font-size:1rem;font-weight:700;letter-spacing:.05em;}
+  .card h3{font-size:1.4rem;margin:8px 0 12px;text-transform:uppercase;letter-spacing:.01em;}
+  .card p{color:var(--muted);font-size:1rem;margin:0 0 16px;}
+  .card .more{color:var(--navy);font-weight:600;font-size:.82rem;font-family:var(--serif);letter-spacing:.08em;text-transform:uppercase;}
+  .card .more::after{content:" \2192";color:var(--red);}
+
+  /* team */
+  .team-sec{background:#fff;border-top:1px solid var(--line);}
+  .team{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .member{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:32px 30px;}
+  .member .avatar{width:66px;height:66px;border-radius:50%;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+  .member .avatar svg{width:38px;height:38px;}
+  .member h3{font-size:1.4rem;margin:0 0 4px;text-transform:uppercase;letter-spacing:.02em;}
+  .member .role{color:var(--red);font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin:0 0 14px;font-family:var(--serif);}
+  .member p{color:#3a3328;font-size:1.02rem;margin:0;}
+  .team-note{max-width:760px;margin:34px auto 0;text-align:center;color:var(--muted);font-size:1.05rem;font-style:italic;}
+
+  /* pricing */
+  .pricing{background:var(--navy);color:#fff;}
+  .pricing .section-head h2{color:#fff;}
+  .pricing .section-head p{color:#c4b9a6;}
+  .pricing .section-head .eyebrow{color:var(--gold-soft);}
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch;}
+  .plan{background:#fff;color:var(--ink);border-radius:10px;padding:34px 28px;display:flex;flex-direction:column;position:relative;border-top:5px solid var(--gold);}
+  .plan.featured{border-top-color:var(--red);box-shadow:0 18px 50px rgba(0,0,0,.35);transform:translateY(-6px);}
+  .ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-family:var(--serif);font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px;white-space:nowrap;}
+  .ribbon.gold{background:var(--gold);color:var(--navy-deep);}
+  .plan .pname{font-family:var(--serif);color:var(--red);font-size:1.5rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px;}
+  .plan .phours{font-family:var(--serif);color:var(--navy);font-size:1.05rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;margin-bottom:18px;}
+  .plan .pprice{font-family:var(--serif);color:var(--navy);font-size:2.6rem;font-weight:700;line-height:1;}
+  .plan .prate{display:block;color:var(--muted);font-family:var(--sans);font-size:.95rem;font-weight:400;margin-top:8px;text-transform:none;letter-spacing:0;}
+  .plan .pdesc{color:#574d40;font-size:.98rem;margin:18px 0 24px;flex:1;}
+  .plan .pcta{margin-top:auto;background:var(--navy);color:#fff;text-align:center;text-decoration:none;padding:13px;border-radius:5px;font-family:var(--serif);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;}
+  .plan .pcta:hover{background:var(--red);}
+  .plan.featured .pcta{background:var(--red);}
+  .plan.featured .pcta:hover{background:var(--red-deep);}
+  .price-note{text-align:center;color:#b3a791;font-size:.86rem;margin:30px auto 0;max-width:640px;}
+
+  /* stats */
+  .stats{background:var(--paper);}
+  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px 26px;}
+  .stat .big{font-family:var(--serif);color:var(--red);font-size:2.6rem;font-weight:700;line-height:1;}
+  .stat p{color:#4a4234;margin:14px 0 0;font-size:1rem;}
+  .stat .src{display:block;margin-top:12px;color:var(--muted);font-size:.78rem;}
+
+  /* form */
+  .lead{background:#fff;border-top:1px solid var(--line);}
+  .lead .panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;max-width:720px;margin:0 auto;padding:42px 40px;box-shadow:0 18px 50px rgba(33,26,20,.08);}
+  .lead h2{font-size:clamp(1.7rem,3.2vw,2.3rem);margin:0 0 8px;text-align:center;text-transform:uppercase;letter-spacing:.01em;}
+  .lead .sub{text-align:center;color:var(--muted);margin:0 0 28px;font-size:1.05rem;}
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-weight:600;color:var(--navy);font-size:.95rem;margin-bottom:7px;}
+  .field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #cfc4ac;border-radius:6px;font-family:var(--sans);font-size:1rem;color:var(--ink);background:#fff;}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px rgba(143,44,34,.16);}
+  .field .opt{color:var(--muted);font-weight:400;font-size:.85rem;}
+  .consent{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e2d8c1;border-radius:8px;padding:16px 18px;margin:6px 0 22px;}
+  .consent input{margin-top:5px;flex:0 0 auto;width:18px;height:18px;accent-color:var(--red);}
+  .consent label{font-size:.86rem;color:#4a4234;line-height:1.55;font-weight:400;}
+  .consent a{color:var(--red);font-weight:600;}
+  .btn-submit{width:100%;background:var(--red);color:#fff;border:0;border-radius:6px;padding:16px;font-family:var(--serif);font-size:1rem;font-weight:600;cursor:pointer;letter-spacing:.08em;text-transform:uppercase;}
+  .btn-submit:hover{background:var(--red-deep);}
+  .form-note{text-align:center;color:var(--muted);font-size:.82rem;margin-top:14px;}
+  .confirm{text-align:center;padding:20px;}
+  .confirm .check{width:60px;height:60px;border-radius:50%;background:#e9f0e4;color:#3f8f54;display:flex;align-items:center;justify-content:center;font-size:1.9rem;margin:0 auto 18px;}
+  .confirm h3{font-size:1.5rem;margin:0 0 10px;text-transform:uppercase;}
+  .confirm p{color:var(--muted);margin:0;}
+
+  /* faq */
+  .faq-wrap{max-width:780px;margin:0 auto;}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-item button{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:20px 0;font-family:var(--serif);font-size:1.2rem;color:var(--navy);font-weight:600;display:flex;justify-content:space-between;gap:18px;align-items:center;}
+  .faq-item button .pm{color:var(--red);font-size:1.4rem;flex:0 0 auto;transition:transform .2s;}
+  .faq-item.open button .pm{transform:rotate(45deg);}
+  .faq-answer{max-height:0;overflow:hidden;transition:max-height .25s ease;color:#3a3328;}
+  .faq-item.open .faq-answer{max-height:400px;}
+  .faq-answer p{margin:0 0 20px;}
+
+  /* cta band */
+  .cta-block{background:linear-gradient(160deg,var(--red),var(--red-deep));color:#fff;text-align:center;}
+  .cta-block h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.6rem);margin:0 0 14px;text-transform:uppercase;letter-spacing:.01em;}
+  .cta-block p{color:#f3ddd9;max-width:560px;margin:0 auto 26px;font-size:1.1rem;}
+  .cta-block .btn-primary{background:var(--gold);}
+  .cta-block .btn-primary:hover{background:var(--gold-soft);}
+
+  /* footer */
+  .bio-footer{background:var(--navy);color:#cfc4b4;}
+  .bio-footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:54px 0 30px;}
+  .bio-footer h4{font-family:var(--serif);color:#fff;font-size:1.05rem;margin:0 0 14px;text-transform:uppercase;letter-spacing:.08em;}
+  .bio-footer p,.bio-footer a{color:#b3a791;font-size:.95rem;text-decoration:none;}
+  .bio-footer a:hover{color:var(--gold-soft);}
+  .bio-footer ul{list-style:none;padding:0;margin:0;}
+  .bio-footer li{margin-bottom:9px;}
+  .legal{border-top:1px solid rgba(255,255,255,.12);padding:22px 0;color:#8c8170;font-size:.8rem;line-height:1.6;}
+  .legal strong{color:#b3a791;}
+
+  @media(max-width:880px){
+    .cards,.stat-grid,.price-grid,.team{grid-template-columns:1fr;}
+    .plan.featured{transform:none;}
+    .bio-footer .grid{grid-template-columns:1fr;gap:28px;}
+    .nav-links{display:none;}
+    .burger{display:block;}
+    .nav-links.show{display:flex;position:absolute;top:78px;left:0;right:0;background:var(--navy-deep);flex-direction:column;padding:20px 24px;gap:18px;border-bottom:1px solid rgba(255,255,255,.1);}
+  }
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <svg class="emblem" width="46" height="46" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#c8a24a" stroke-width="3"/>
+        <circle cx="50" cy="50" r="39" fill="none" stroke="#c8a24a" stroke-width="1" opacity="0.45"/>
+        <circle cx="50" cy="19" r="3.4" fill="none" stroke="#c8a24a" stroke-width="2.2"/>
+        <path d="M50 22 L40 38 M50 22 L60 38" stroke="#c8a24a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <g fill="#c8a24a">
+          <rect x="29" y="36" width="15" height="9" rx="3"/>
+          <circle cx="36" cy="60" r="13"/>
+          <circle cx="24.5" cy="55" r="5.5"/>
+        </g>
+        <g fill="#c8a24a">
+          <rect x="56" y="36" width="15" height="9" rx="3"/>
+          <circle cx="64" cy="60" r="13"/>
+          <circle cx="75.5" cy="55" r="5.5"/>
+        </g>
+      </svg>
+      <span class="brand-text">
+        <span class="name">Rocky Consulting</span>
+        <span class="tag" data-fr="Conseil en redressement" data-en="Turnaround Advisory">Conseil en redressement</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services" data-fr="Services" data-en="Services">Services</a>
+      <a href="#forfaits" data-fr="Forfaits" data-en="Packages">Forfaits</a>
+      <a href="#team" data-fr="Notre histoire" data-en="Our story">Notre histoire</a>
+      <a href="#faq" data-fr="Questions" data-en="FAQ">Questions</a>
+      <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang" role="group" aria-label="Langue / Language">
+        <button id="btnFr" class="active" onclick="setLang('fr')">FR</button>
+        <button id="btnEn" onclick="setLang('en')">EN</button>
+      </div>
+      <a class="btn-call" href="#contact" data-fr="Parlons-en" data-en="Let's talk">Parlons-en</a>
+      <button class="burger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('show')">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0;">
+  <div class="wrap">
+    <p class="eyebrow" data-fr="Dans votre coin quand ça cogne" data-en="In your corner when it hurts">Dans votre coin quand ça cogne</p>
+    <h1 data-html="true" data-fr="Votre entreprise est sur les câbles? <em>On vous aide à vous relever.</em>" data-en="Your business on the ropes? <em>We help you get back up.</em>">Votre entreprise est sur les câbles? <em>On vous aide à vous relever.</em></h1>
+    <p class="lede" data-fr="Avant la faillite, il existe presque toujours des options. On vous aide à les voir clairement et à reprendre le combat avec méthode. Notre équipe a vécu la défaite et la remontée comme entrepreneurs, pas seulement dans les livres." data-en="Before bankruptcy, there are almost always options. We help you see them clearly and get back in the fight with method. Our team has lived defeat and the comeback as entrepreneurs, not just in books.">Avant la faillite, il existe presque toujours des options. On vous aide à les voir clairement et à reprendre le combat avec méthode. Notre équipe a vécu la défaite et la remontée comme entrepreneurs, pas seulement dans les livres.</p>
+    <div class="hero-cta">
+      <a class="btn-primary" href="#contact" data-fr="Demander mon appel confidentiel" data-en="Request my confidential call">Demander mon appel confidentiel</a>
+      <a class="btn-ghost" href="#forfaits" data-fr="Voir nos forfaits" data-en="See our packages">Voir nos forfaits</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="quick-answer" data-html="true"
+    data-fr="<strong>La faillite est souvent évitable si on agit tôt.</strong> Une entreprise insolvable n'est pas une entreprise en faillite&#8239;: elle peut encore restructurer ses coûts, négocier avec ses créanciers ou refinancer sa dette avant toute procédure formelle. Plus l'intervention est précoce, plus les options sont nombreuses."
+    data-en="<strong>Bankruptcy is often avoidable when you act early.</strong> An insolvent business is not a bankrupt business: it can still restructure its costs, negotiate with creditors or refinance its debt before any formal proceeding. The earlier you act, the more options you keep."><strong>La faillite est souvent évitable si on agit tôt.</strong> Une entreprise insolvable n'est pas une entreprise en faillite&#8239;: elle peut encore restructurer ses coûts, négocier avec ses créanciers ou refinancer sa dette avant toute procédure formelle. Plus l'intervention est précoce, plus les options sont nombreuses.</div>
+</div>
+
+<section class="trust" style="padding:0;">
+  <div class="wrap">
+    <div class="ic">i</div>
+    <p data-html="true"
+      data-fr="<strong>Conseil stratégique, pas un syndic.</strong> Rocky Consulting est une firme de conseil en redressement d'entreprise. Nous ne sommes pas un syndic autorisé en insolvabilité et n'administrons aucune procédure sous la Loi sur la faillite et l'insolvabilité. Lorsqu'une procédure formelle devient nécessaire, nous vous orientons vers le professionnel autorisé de votre juridiction&#8239;; au Canada, un syndic autorisé en insolvabilité licencié par le Bureau du surintendant des faillites."
+      data-en="<strong>Strategic advisory, not a trustee.</strong> Rocky Consulting is a business turnaround advisory firm. We are not a Licensed Insolvency Trustee and do not administer any proceedings under the Bankruptcy and Insolvency Act. When a formal proceeding becomes necessary, we refer you to the licensed professional in your jurisdiction; in Canada, a Licensed Insolvency Trustee regulated by the Office of the Superintendent of Bankruptcy."><strong>Conseil stratégique, pas un syndic.</strong> Rocky Consulting est une firme de conseil en redressement d'entreprise. Nous ne sommes pas un syndic autorisé en insolvabilité et n'administrons aucune procédure sous la Loi sur la faillite et l'insolvabilité. Lorsqu'une procédure formelle devient nécessaire, nous vous orientons vers le professionnel autorisé de votre juridiction&#8239;; au Canada, un syndic autorisé en insolvabilité licencié par le Bureau du surintendant des faillites.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-fr="Ce que nous faisons" data-en="What we do">Ce que nous faisons</p>
+      <h2 data-fr="Trois façons de reprendre le contrôle" data-en="Three ways to regain control">Trois façons de reprendre le contrôle</h2>
+      <p data-fr="Un diagnostic clair, un plan concret, et une équipe dans votre coin qui est déjà passée par là." data-en="A clear diagnosis, a concrete plan, and a team in your corner that has been there.">Un diagnostic clair, un plan concret, et une équipe dans votre coin qui est déjà passée par là.</p>
+    </div>
+    <div class="cards">
+      <a class="card" href="/eviter-faillite-pme">
+        <span class="num">01</span>
+        <h3 data-fr="Éviter la faillite" data-en="Avoid bankruptcy">Éviter la faillite</h3>
+        <p data-fr="Comprendre vos vraies options avant qu'il soit trop tard et choisir la voie qui protège ce que vous avez bâti." data-en="Understand your real options before it is too late and choose the path that protects what you built.">Comprendre vos vraies options avant qu'il soit trop tard et choisir la voie qui protège ce que vous avez bâti.</p>
+        <span class="more" data-fr="En savoir plus" data-en="Learn more">En savoir plus</span>
+      </a>
+      <a class="card" href="/restructuration-financiere">
+        <span class="num">02</span>
+        <h3 data-fr="Restructuration financière" data-en="Financial restructuring">Restructuration financière</h3>
+        <p data-fr="Revoir la dette, la trésorerie et la structure de coûts pour rétablir la rentabilité et respirer de nouveau." data-en="Rework debt, cash flow and cost structure to restore profitability and breathe again.">Revoir la dette, la trésorerie et la structure de coûts pour rétablir la rentabilité et respirer de nouveau.</p>
+        <span class="more" data-fr="En savoir plus" data-en="Learn more">En savoir plus</span>
+      </a>
+      <a class="card" href="/restructuration-operationnelle">
+        <span class="num">03</span>
+        <h3 data-fr="Redressement opérationnel" data-en="Operational turnaround">Redressement opérationnel</h3>
+        <p data-fr="Repenser le modèle d'affaires, les coûts et les opérations pour que l'entreprise tienne la route durablement." data-en="Rethink the business model, costs and operations so the company holds up for the long run.">Repenser le modèle d'affaires, les coûts et les opérations pour que l'entreprise tienne la route durablement.</p>
+        <span class="more" data-fr="En savoir plus" data-en="Learn more">En savoir plus</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="team-sec" id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-fr="Notre histoire" data-en="Our story">Notre histoire</p>
+      <h2 data-fr="Une équipe qui a déjà encaissé les coups" data-en="A team that has taken the hits">Une équipe qui a déjà encaissé les coups</h2>
+    </div>
+    <div class="team">
+      <article class="member">
+        <div class="avatar"><svg viewBox="0 0 100 100" aria-hidden="true"><g fill="currentColor"><rect x="30" y="30" width="22" height="13" rx="4"/><circle cx="45" cy="62" r="20"/><circle cx="26" cy="54" r="9"/></g></svg></div>
+        <h3 data-fr="Le fondateur" data-en="The founder">Le fondateur</h3>
+        <p class="role" data-fr="Entrepreneur, expérience vécue" data-en="Entrepreneur, lived experience">Entrepreneur, expérience vécue</p>
+        <p data-fr="Il a bâti des entreprises, encaissé l'échec et trouvé le chemin du retour. Il a connu ce moment où les chiffres ne rentrent plus, où les nuits sont courtes et où on n'ose plus regarder le compte de banque. C'est cette expérience vécue, pas théorique, qui est au cœur de Rocky Consulting." data-en="He has built businesses, taken the hit of failure and found the way back. He has known the moment when the numbers stop adding up, the nights get short, and you no longer dare to look at the bank account. That lived, not theoretical, experience is at the heart of Rocky Consulting.">Il a bâti des entreprises, encaissé l'échec et trouvé le chemin du retour. Il a connu ce moment où les chiffres ne rentrent plus, où les nuits sont courtes et où on n'ose plus regarder le compte de banque. C'est cette expérience vécue, pas théorique, qui est au cœur de Rocky Consulting.</p>
+      </article>
+      <article class="member">
+        <div class="avatar"><svg viewBox="0 0 100 100" aria-hidden="true"><g fill="currentColor"><rect x="48" y="30" width="22" height="13" rx="4"/><circle cx="55" cy="62" r="20"/><circle cx="74" cy="54" r="9"/></g></svg></div>
+        <h3 data-fr="Le partenaire" data-en="The partner">Le partenaire</h3>
+        <p class="role" data-fr="Rigueur financière et humaine" data-en="Financial and human rigor">Rigueur financière et humaine</p>
+        <p data-fr="Fort de 8 ans en financement et courtage et de 13 ans dans la relation humaine, il apporte la rigueur des chiffres et l'écoute qui font qu'un plan de redressement tient la route, et qu'on se sent réellement accompagné à chaque étape, sans jamais se sentir jugé." data-en="With 8 years in financing and brokerage and 13 years in human relations, he brings the rigor of numbers and the listening that make a turnaround plan hold up, and that make you feel truly supported at every step, never judged.">Fort de 8 ans en financement et courtage et de 13 ans dans la relation humaine, il apporte la rigueur des chiffres et l'écoute qui font qu'un plan de redressement tient la route, et qu'on se sent réellement accompagné à chaque étape, sans jamais se sentir jugé.</p>
+      </article>
+    </div>
+    <p class="team-note" data-fr="Rocky Consulting réunit des consultants qui ont le redressement dans le sang. L'équipe s'agrandit, un partenaire à la fois." data-en="Rocky Consulting brings together consultants with turnaround in their blood. The team is growing, one partner at a time.">Rocky Consulting réunit des consultants qui ont le redressement dans le sang. L'équipe s'agrandit, un partenaire à la fois.</p>
+  </div>
+</section>
+
+<section class="pricing" id="forfaits">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-fr="Nos forfaits" data-en="Our packages">Nos forfaits</p>
+      <h2 data-fr="Choisissez votre combat" data-en="Pick your fight">Choisissez votre combat</h2>
+      <p data-fr="Des blocs d'heures clairs, sans surprise. Plus le bloc est grand, plus le taux horaire baisse." data-en="Clear hour blocks, no surprises. The bigger the block, the lower the hourly rate.">Des blocs d'heures clairs, sans surprise. Plus le bloc est grand, plus le taux horaire baisse.</p>
+    </div>
+    <div class="price-grid">
+      <div class="plan">
+        <div class="pname" data-fr="Le Jab" data-en="The Jab">Le Jab</div>
+        <div class="phours" data-fr="Bloc de 5 heures" data-en="5-hour block">Bloc de 5 heures</div>
+        <div class="pprice">1&#8239;500&#8239;$<span class="prate" data-fr="300&#8239;$ de l'heure" data-en="300 $ per hour">300&#8239;$ de l'heure</span></div>
+        <p class="pdesc" data-fr="Pour un premier diagnostic ou un coup de main ciblé sur une question précise." data-en="For an initial diagnosis or focused help on a specific question.">Pour un premier diagnostic ou un coup de main ciblé sur une question précise.</p>
+        <a class="pcta" href="#contact" data-fr="Réserver ce bloc" data-en="Book this block">Réserver ce bloc</a>
+      </div>
+      <div class="plan featured">
+        <span class="ribbon" data-fr="Le plus populaire" data-en="Most popular">Le plus populaire</span>
+        <div class="pname" data-fr="Le Crochet" data-en="The Hook">Le Crochet</div>
+        <div class="phours" data-fr="Bloc de 10 heures" data-en="10-hour block">Bloc de 10 heures</div>
+        <div class="pprice">2&#8239;500&#8239;$<span class="prate" data-fr="soit 250&#8239;$ de l'heure" data-en="that is 250 $ per hour">soit 250&#8239;$ de l'heure</span></div>
+        <p class="pdesc" data-fr="Pour enclencher un vrai plan d'action et négocier avec vos créanciers." data-en="To launch a real action plan and negotiate with your creditors.">Pour enclencher un vrai plan d'action et négocier avec vos créanciers.</p>
+        <a class="pcta" href="#contact" data-fr="Réserver ce bloc" data-en="Book this block">Réserver ce bloc</a>
+      </div>
+      <div class="plan">
+        <span class="ribbon gold" data-fr="Meilleure valeur" data-en="Best value">Meilleure valeur</span>
+        <div class="pname" data-fr="Le Combat complet" data-en="The Full Fight">Le Combat complet</div>
+        <div class="phours" data-fr="Bloc de 100 heures" data-en="100-hour block">Bloc de 100 heures</div>
+        <div class="pprice">20&#8239;000&#8239;$<span class="prate" data-fr="soit 200&#8239;$ de l'heure" data-en="that is 200 $ per hour">soit 200&#8239;$ de l'heure</span></div>
+        <p class="pdesc" data-fr="Un accompagnement complet, du diagnostic à la relance, dans votre coin jusqu'au bout." data-en="Full support, from diagnosis to relaunch, in your corner all the way.">Un accompagnement complet, du diagnostic à la relance, dans votre coin jusqu'au bout.</p>
+        <a class="pcta" href="#contact" data-fr="Réserver ce bloc" data-en="Book this block">Réserver ce bloc</a>
+      </div>
+    </div>
+    <p class="price-note" data-fr="Tarifs en dollars canadiens (CAD), taxes en sus, à titre indicatif. Une autre devise peut être convenue pour les mandats internationaux. La première conversation est toujours gratuite et sans engagement." data-en="Prices in Canadian dollars (CAD), taxes extra, for guidance. Another currency can be arranged for international engagements. The first conversation is always free and no-obligation.">Tarifs en dollars canadiens (CAD), taxes en sus, à titre indicatif. Une autre devise peut être convenue pour les mandats internationaux. La première conversation est toujours gratuite et sans engagement.</p>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-fr="Vous n'êtes pas seul" data-en="You are not alone">Vous n'êtes pas seul</p>
+      <h2 data-fr="La détresse d'entreprise est plus courante qu'on le croit" data-en="Business distress is more common than you think">La détresse d'entreprise est plus courante qu'on le croit</h2>
+      <p data-fr="Et la plupart des dirigeants attendent trop longtemps avant de demander de l'aide." data-en="And most owners wait too long before asking for help.">Et la plupart des dirigeants attendent trop longtemps avant de demander de l'aide.</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="big">4&#8239;840</div>
+        <p data-fr="insolvabilités d'entreprises au Canada en 2025, soit 31,5&#8239;% au-dessus de la moyenne d'avant la pandémie." data-en="business insolvencies in Canada in 2025, about 31.5 percent above the pre-pandemic average.">insolvabilités d'entreprises au Canada en 2025, soit 31,5&#8239;% au-dessus de la moyenne d'avant la pandémie.</p>
+        <span class="src" data-fr="Source&#8239;: ACPIR (CAIRP), février 2026, d'après le Bureau du surintendant des faillites." data-en="Source: CAIRP, February 2026, based on the Office of the Superintendent of Bankruptcy.">Source&#8239;: ACPIR (CAIRP), février 2026, d'après le Bureau du surintendant des faillites.</span>
+      </div>
+      <div class="stat">
+        <div class="big">3 / 1000</div>
+        <p data-fr="entreprises québécoises s'avèrent insolvables, contre 1,1 pour la moyenne canadienne et 0,7 pour l'Ontario." data-en="Quebec businesses prove insolvent, versus 1.1 for the Canadian average and 0.7 for Ontario.">entreprises québécoises s'avèrent insolvables, contre 1,1 pour la moyenne canadienne et 0,7 pour l'Ontario.</p>
+        <span class="src" data-fr="Source&#8239;: rapport B.-M. Papillon, UQTR et ministère de l'Économie du Québec, février 2026." data-en="Source: B.-M. Papillon report, UQTR and Quebec Ministry of Economy, February 2026.">Source&#8239;: rapport B.-M. Papillon, UQTR et ministère de l'Économie du Québec, février 2026.</span>
+      </div>
+      <div class="stat">
+        <div class="big">~571</div>
+        <p data-fr="entreprises par mois déposent une procédure d'insolvabilité, alors que des milliers d'autres ferment en silence, sans avoir demandé conseil." data-en="businesses per month file an insolvency proceeding, while thousands more close quietly, without ever asking for advice.">entreprises par mois déposent une procédure d'insolvabilité, alors que des milliers d'autres ferment en silence, sans avoir demandé conseil.</p>
+        <span class="src" data-fr="Source&#8239;: ACPIR (CAIRP), mai 2025, d'après Statistique Canada et le BSF." data-en="Source: CAIRP, May 2025, based on Statistics Canada and the OSB.">Source&#8239;: ACPIR (CAIRP), mai 2025, d'après Statistique Canada et le BSF.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lead" id="contact">
+  <div class="wrap">
+    <div class="panel" id="formPanel">
+      <h2 data-fr="Parlons-en." data-en="Let's talk.">Parlons-en.</h2>
+      <p class="sub" data-fr="Première conversation confidentielle et sans engagement. On a déjà été là où vous êtes." data-en="A confidential, no-obligation first conversation. We have been where you are.">Première conversation confidentielle et sans engagement. On a déjà été là où vous êtes.</p>
+
+      <form id="leadForm" onsubmit="return submitLead(event)">
+        <div class="field">
+          <label for="firstname" data-fr="Prénom" data-en="First name">Prénom</label>
+          <input type="text" id="firstname" name="firstname" required autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="email" data-fr="Courriel" data-en="Email">Courriel</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="phone">
+            <span data-fr="Téléphone" data-en="Phone">Téléphone</span>
+            <span class="opt" data-fr="(optionnel, pour un rappel confidentiel)" data-en="(optional, for a confidential callback)">(optionnel, pour un rappel confidentiel)</span>
+          </label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="urgency" data-fr="À quel point la situation est-elle urgente&#8239;?" data-en="How urgent is your situation?">À quel point la situation est-elle urgente&#8239;?</label>
+          <select id="urgency" name="urgency" required>
+            <option value="" data-fr="Choisissez une réponse" data-en="Choose an answer">Choisissez une réponse</option>
+            <option value="explore" data-fr="J'explore mes options, rien d'urgent" data-en="Just exploring my options">J'explore mes options, rien d'urgent</option>
+            <option value="slipping" data-fr="Je sens que ça se détériore (2 à 6 mois)" data-en="Things are slipping (2 to 6 months)">Je sens que ça se détériore (2 à 6 mois)</option>
+            <option value="serious" data-fr="C'est sérieux&#8239;: créanciers ou liquidités sous pression (semaines)" data-en="Serious: creditor or cash pressure (weeks)">C'est sérieux&#8239;: créanciers ou liquidités sous pression (semaines)</option>
+            <option value="critical" data-fr="Urgence critique&#8239;: mise en demeure, saisie, paie en péril" data-en="Critical: legal notice, seizure, payroll at risk">Urgence critique&#8239;: mise en demeure, saisie, paie en péril</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">
+            <span data-fr="En une phrase, qu'est-ce qui vous préoccupe le plus en ce moment&#8239;?" data-en="In one sentence, what worries you most right now?">En une phrase, qu'est-ce qui vous préoccupe le plus en ce moment&#8239;?</span>
+            <span class="opt" data-fr="(optionnel)" data-en="(optional)">(optionnel)</span>
+          </label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+
+        <div class="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent" data-html="true"
+            data-fr="J'autorise Rocky Consulting à recueillir et à utiliser les renseignements fournis dans ce formulaire (nom, courriel, téléphone et description de ma situation) dans le seul but de communiquer avec moi et d'évaluer ma demande d'accompagnement. Ces renseignements confidentiels ne seront ni vendus ni communiqués à des tiers sans mon consentement, sauf si la loi l'exige, et seront conservés uniquement le temps nécessaire à cette fin. Je peux retirer mon consentement, consulter ou faire rectifier mes renseignements en tout temps en écrivant à [RPRP, courriel]. Consultez notre <a href='/politique-confidentialite'>politique de confidentialité</a>."
+            data-en="I authorize Rocky Consulting to collect and use the information provided in this form (name, email, phone and description of my situation) for the sole purpose of contacting me and assessing my request. This confidential information will not be sold or shared with third parties without my consent, except as required by law, and will be retained only as long as necessary for this purpose. I may withdraw my consent, access or correct my information at any time by emailing [Privacy Officer, email]. See our <a href='/en/privacy-policy'>privacy policy</a>.">J'autorise Rocky Consulting à recueillir et à utiliser les renseignements fournis dans ce formulaire (nom, courriel, téléphone et description de ma situation) dans le seul but de communiquer avec moi et d'évaluer ma demande d'accompagnement. Ces renseignements confidentiels ne seront ni vendus ni communiqués à des tiers sans mon consentement, sauf si la loi l'exige, et seront conservés uniquement le temps nécessaire à cette fin. Je peux retirer mon consentement, consulter ou faire rectifier mes renseignements en tout temps en écrivant à [RPRP, courriel]. Consultez notre <a href='/politique-confidentialite'>politique de confidentialité</a>.</label>
+        </div>
+
+        <button type="submit" class="btn-submit" data-fr="Demander mon appel confidentiel" data-en="Request my confidential call">Demander mon appel confidentiel</button>
+        <p class="form-note" data-fr="Réponse sous 24&#8239;h ouvrables. Tout reste strictement confidentiel." data-en="Reply within 24 business hours. Everything stays strictly confidential.">Réponse sous 24&#8239;h ouvrables. Tout reste strictement confidentiel.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-fr="Questions fréquentes" data-en="Frequently asked">Questions fréquentes</p>
+      <h2 data-fr="Ce que les dirigeants nous demandent souvent" data-en="What owners often ask us">Ce que les dirigeants nous demandent souvent</h2>
+    </div>
+    <div class="faq-wrap" id="faqWrap">
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)"><span data-fr="Rocky Consulting est-il un syndic autorisé en insolvabilité&#8239;?" data-en="Is Rocky Consulting a Licensed Insolvency Trustee?">Rocky Consulting est-il un syndic autorisé en insolvabilité&#8239;?</span><span class="pm">+</span></button>
+        <div class="faq-answer"><p data-fr="Non. Rocky Consulting est une firme de conseil stratégique en redressement. Nous intervenons en amont, avant les procédures formelles. Seul un syndic autorisé peut administrer une faillite ou une proposition concordataire. Lorsque c'est nécessaire, nous vous orientons vers un syndic licencié." data-en="No. Rocky Consulting is a strategic turnaround advisory firm. We work upstream, before formal proceedings. Only a Licensed Insolvency Trustee can administer a bankruptcy or a proposal. When needed, we refer you to a licensed trustee.">Non. Rocky Consulting est une firme de conseil stratégique en redressement. Nous intervenons en amont, avant les procédures formelles. Seul un syndic autorisé peut administrer une faillite ou une proposition concordataire. Lorsque c'est nécessaire, nous vous orientons vers un syndic licencié.</p></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)"><span data-fr="Comment fonctionnent vos forfaits&#8239;?" data-en="How do your packages work?">Comment fonctionnent vos forfaits&#8239;?</span><span class="pm">+</span></button>
+        <div class="faq-answer"><p data-fr="Nous travaillons par blocs d'heures&#8239;: 5 heures à 300&#8239;$ de l'heure, 10 heures à 2&#8239;500&#8239;$, ou 100 heures à 20&#8239;000&#8239;$. Plus le bloc est grand, plus le taux horaire baisse. La première conversation est gratuite, et nous choisissons ensemble le bloc adapté à votre situation. Les taxes s'ajoutent." data-en="We work in hour blocks: 5 hours at 300 $ per hour, 10 hours for 2,500 $, or 100 hours for 20,000 $. The bigger the block, the lower the hourly rate. The first conversation is free, and together we pick the block that fits your situation. Taxes are extra.">Nous travaillons par blocs d'heures&#8239;: 5 heures à 300&#8239;$ de l'heure, 10 heures à 2&#8239;500&#8239;$, ou 100 heures à 20&#8239;000&#8239;$. Plus le bloc est grand, plus le taux horaire baisse. La première conversation est gratuite, et nous choisissons ensemble le bloc adapté à votre situation. Les taxes s'ajoutent.</p></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)"><span data-fr="Puis-je éviter la faillite si je ne peux plus payer mes dettes&#8239;?" data-en="Can I avoid bankruptcy if I can no longer pay my debts?">Puis-je éviter la faillite si je ne peux plus payer mes dettes&#8239;?</span><span class="pm">+</span></button>
+        <div class="faq-answer"><p data-fr="Souvent, oui, surtout si vous agissez tôt. Restructuration des coûts, négociation avec les créanciers, refinancement ou entente de paiement sont autant de voies possibles avant toute procédure formelle. Le facteur déterminant est le délai&#8239;: plus on intervient tôt, plus les options restent ouvertes." data-en="Often, yes, especially if you act early. Cost restructuring, creditor negotiation, refinancing or payment arrangements are all possible paths before any formal proceeding. Timing is the deciding factor: the earlier you act, the more options stay open.">Souvent, oui, surtout si vous agissez tôt. Restructuration des coûts, négociation avec les créanciers, refinancement ou entente de paiement sont autant de voies possibles avant toute procédure formelle. Le facteur déterminant est le délai&#8239;: plus on intervient tôt, plus les options restent ouvertes.</p></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)"><span data-fr="Que se passe-t-il lors d'une première conversation&#8239;?" data-en="What happens during a first conversation?">Que se passe-t-il lors d'une première conversation&#8239;?</span><span class="pm">+</span></button>
+        <div class="faq-answer"><p data-fr="On fait le point, simplement et sans jugement. Vous nous décrivez votre situation, nous vous donnons une lecture honnête de vos options et des prochaines étapes possibles. C'est confidentiel, sans engagement, et vous repartez avec une vision plus claire, peu importe la suite." data-en="We take stock, simply and without judgment. You describe your situation, we give you an honest read of your options and possible next steps. It is confidential, no-obligation, and you leave with a clearer view, whatever comes next.">On fait le point, simplement et sans jugement. Vous nous décrivez votre situation, nous vous donnons une lecture honnête de vos options et des prochaines étapes possibles. C'est confidentiel, sans engagement, et vous repartez avec une vision plus claire, peu importe la suite.</p></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)"><span data-fr="Travaillez-vous seulement au Québec&#8239;?" data-en="Do you only work in Quebec?">Travaillez-vous seulement au Québec&#8239;?</span><span class="pm">+</span></button>
+        <div class="faq-answer"><p data-fr="Nous sommes basés sur la Rive-Sud de Montréal, mais nous accompagnons des dirigeants à distance, en français comme en anglais. Le conseil stratégique en redressement se fait très bien par visioconférence, où que vous soyez." data-en="We are based on the South Shore of Montreal, but we work with owners remotely, in French and in English. Strategic turnaround advisory works well by video, wherever you are.">Nous sommes basés sur la Rive-Sud de Montréal, mais nous accompagnons des dirigeants à distance, en français comme en anglais. Le conseil stratégique en redressement se fait très bien par visioconférence, où que vous soyez.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-block">
+  <div class="wrap">
+    <h2 data-fr="Le compte n'est pas terminé." data-en="The count is not over.">Le compte n'est pas terminé.</h2>
+    <p data-fr="Chaque semaine d'attente réduit vos options. Une conversation ne coûte rien et peut tout changer." data-en="Every week of waiting reduces your options. A conversation costs nothing and can change everything.">Chaque semaine d'attente réduit vos options. Une conversation ne coûte rien et peut tout changer.</p>
+    <a class="btn-primary" href="#contact" data-fr="Demander mon appel confidentiel" data-en="Request my confidential call">Demander mon appel confidentiel</a>
+  </div>
+</section>
+
+<footer class="bio-footer">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h4>Rocky Consulting</h4>
+        <p data-fr="Conseil en redressement et gestion de crise pour PME. Une équipe de consultants qui ont vécu le combat de l'entreprise, du succès à l'échec jusqu'au redressement, et qui se tiennent dans votre coin." data-en="Turnaround and crisis advisory for SMEs. A team of consultants who have lived the business fight, from success to failure to recovery, and who stand in your corner.">Conseil en redressement et gestion de crise pour PME. Une équipe de consultants qui ont vécu le combat de l'entreprise, du succès à l'échec jusqu'au redressement, et qui se tiennent dans votre coin.</p>
+      </div>
+      <div>
+        <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+        <ul>
+          <li><a href="#services" data-fr="Services" data-en="Services">Services</a></li>
+          <li><a href="#forfaits" data-fr="Forfaits" data-en="Packages">Forfaits</a></li>
+          <li><a href="#team" data-fr="Notre histoire" data-en="Our story">Notre histoire</a></li>
+          <li><a href="#faq" data-fr="Questions" data-en="FAQ">Questions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-fr="Nous joindre" data-en="Reach us">Nous joindre</h4>
+        <ul>
+          <li><a href="tel:[TELEPHONE]">[Téléphone Rocky Consulting]</a></li>
+          <li><a href="mailto:[COURRIEL]">[Courriel Rocky Consulting]</a></li>
+          <li><a href="[CALENDLY]" data-fr="Prendre rendez-vous" data-en="Book a meeting">Prendre rendez-vous</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal" data-html="true"
+      data-fr="<strong>Avis important&#8239;:</strong> Rocky Consulting est une firme de conseil stratégique en redressement d'entreprise. Rocky Consulting accompagne des dirigeants au Canada et à l'international, à distance, en français et en anglais. Rocky Consulting n'est pas un syndic autorisé en insolvabilité et n'administre aucune procédure sous la Loi sur la faillite et l'insolvabilité (faillite, proposition concordataire ou de consommateur, séquestre). Le contenu de ce site est fourni à titre éducatif et ne constitue ni un avis juridique, ni fiscal, ni financier personnalisé. Pour toute procédure formelle d'insolvabilité, consultez le professionnel autorisé de votre juridiction&#8239;; au Canada, un syndic autorisé en insolvabilité licencié par le Bureau du surintendant des faillites. &copy; 2026 Rocky Consulting. Tous droits réservés."
+      data-en="<strong>Important notice:</strong> Rocky Consulting is a strategic business turnaround advisory firm. Rocky Consulting works with owners in Canada and internationally, remotely, in French and English. Rocky Consulting is not a Licensed Insolvency Trustee and does not administer any proceeding under the Bankruptcy and Insolvency Act (bankruptcy, proposal, receivership). The content of this site is provided for educational purposes and does not constitute personalized legal, tax or financial advice. For any formal insolvency proceeding, consult the licensed professional in your jurisdiction; in Canada, a Licensed Insolvency Trustee regulated by the Office of the Superintendent of Bankruptcy. &copy; 2026 Rocky Consulting. All rights reserved."><strong>Avis important&#8239;:</strong> Rocky Consulting est une firme de conseil stratégique en redressement d'entreprise. Rocky Consulting accompagne des dirigeants au Canada et à l'international, à distance, en français et en anglais. Rocky Consulting n'est pas un syndic autorisé en insolvabilité et n'administre aucune procédure sous la Loi sur la faillite et l'insolvabilité (faillite, proposition concordataire ou de consommateur, séquestre). Le contenu de ce site est fourni à titre éducatif et ne constitue ni un avis juridique, ni fiscal, ni financier personnalisé. Pour toute procédure formelle d'insolvabilité, consultez le professionnel autorisé de votre juridiction&#8239;; au Canada, un syndic autorisé en insolvabilité licencié par le Bureau du surintendant des faillites. &copy; 2026 Rocky Consulting. Tous droits réservés.</div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":["ProfessionalService","FinancialService"],
+      "@id":"https://rockyconsulting.ca/#business",
+      "name":"Rocky Consulting",
+      "slogan":"Dans votre coin.",
+      "description":"Conseil en redressement et gestion de crise pour PME. Diagnostic, restructuration financiere et operationnelle, negociation avec les creanciers en amont des procedures formelles.",
+      "url":"https://rockyconsulting.ca/",
+      "areaServed":["CA","Quebec","International"],
+      "availableLanguage":["fr-CA","en-CA"],
+      "knowsAbout":["redressement d'entreprise","restructuration financiere","insolvabilite","gestion de crise","negociation avec les creanciers"],
+      "makesOffer":[
+        {"@type":"Offer","name":"Le Jab - bloc de 5 heures","priceCurrency":"CAD","price":"1500","description":"Bloc de 5 heures de conseil, 300 dollars de l'heure. Taxes en sus."},
+        {"@type":"Offer","name":"Le Crochet - bloc de 10 heures","priceCurrency":"CAD","price":"2500","description":"Bloc de 10 heures de conseil, soit 250 dollars de l'heure. Taxes en sus."},
+        {"@type":"Offer","name":"Le Combat complet - bloc de 100 heures","priceCurrency":"CAD","price":"20000","description":"Bloc de 100 heures de conseil, soit 200 dollars de l'heure. Taxes en sus."}
+      ]
+    },
+    {"@type":"WebSite","@id":"https://rockyconsulting.ca/#website","url":"https://rockyconsulting.ca/","name":"Rocky Consulting","inLanguage":["fr-CA","en-CA"],"publisher":{"@id":"https://rockyconsulting.ca/#business"}},
+    {"@type":"WebPage","@id":"https://rockyconsulting.ca/#webpage","url":"https://rockyconsulting.ca/","name":"Rocky Consulting | Conseil en redressement de PME","isPartOf":{"@id":"https://rockyconsulting.ca/#website"},"about":{"@id":"https://rockyconsulting.ca/#business"},"inLanguage":"fr-CA","speakable":{"@type":"SpeakableSpecification","cssSelector":[".quick-answer","h1",".faq-answer"]}},
+    {"@type":"BreadcrumbList","@id":"https://rockyconsulting.ca/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://rockyconsulting.ca/"}]},
+    {"@type":"FAQPage","@id":"https://rockyconsulting.ca/#faq","mainEntity":[
+      {"@type":"Question","name":"Rocky Consulting est-il un syndic autorise en insolvabilite ?","acceptedAnswer":{"@type":"Answer","text":"Non. Rocky Consulting est une firme de conseil strategique en redressement. Nous intervenons en amont, avant les procedures formelles. Seul un syndic autorise peut administrer une faillite ou une proposition concordataire. Lorsque c'est necessaire, nous vous orientons vers un syndic licencie."}},
+      {"@type":"Question","name":"Comment fonctionnent vos forfaits ?","acceptedAnswer":{"@type":"Answer","text":"Nous travaillons par blocs d'heures : 5 heures a 300 dollars de l'heure, 10 heures a 2 500 dollars, ou 100 heures a 20 000 dollars. Plus le bloc est grand, plus le taux horaire baisse. La premiere conversation est gratuite, et nous choisissons ensemble le bloc adapte a votre situation. Les taxes s'ajoutent."}},
+      {"@type":"Question","name":"Puis-je eviter la faillite si je ne peux plus payer mes dettes ?","acceptedAnswer":{"@type":"Answer","text":"Souvent, oui, surtout si vous agissez tot. Restructuration des couts, negociation avec les creanciers, refinancement ou entente de paiement sont autant de voies possibles avant toute procedure formelle. Le facteur determinant est le delai : plus on intervient tot, plus les options restent ouvertes."}},
+      {"@type":"Question","name":"Que se passe-t-il lors d'une premiere conversation ?","acceptedAnswer":{"@type":"Answer","text":"On fait le point, simplement et sans jugement. Vous nous decrivez votre situation, nous vous donnons une lecture honnete de vos options et des prochaines etapes possibles. C'est confidentiel, sans engagement, et vous repartez avec une vision plus claire, peu importe la suite."}},
+      {"@type":"Question","name":"Travaillez-vous seulement au Quebec ?","acceptedAnswer":{"@type":"Answer","text":"Nous sommes bases sur la Rive-Sud de Montreal, mais nous accompagnons des dirigeants a distance, en francais comme en anglais. Le conseil strategique en redressement se fait tres bien par visioconference, ou que vous soyez."}}
+    ]}
+  ]
+}
+</script>
+
+<script>
+  function setLang(lang){
+    document.documentElement.lang=(lang==='fr')?'fr-CA':'en-CA';
+    document.querySelectorAll('[data-fr]').forEach(function(el){
+      var v=(lang==='fr')?el.getAttribute('data-fr'):el.getAttribute('data-en');
+      if(v===null)return;
+      if(el.getAttribute('data-html')==='true'){el.innerHTML=v;}else{el.textContent=v;}
+    });
+    document.getElementById('btnFr').classList.toggle('active',lang==='fr');
+    document.getElementById('btnEn').classList.toggle('active',lang==='en');
+    document.getElementById('navLinks').classList.remove('show');
+  }
+  function toggleFaq(btn){btn.parentElement.classList.toggle('open');}
+  function submitLead(e){
+    e.preventDefault();
+    var consent=document.getElementById('consent');
+    if(!consent.checked){consent.focus();return false;}
+    var isFr=document.documentElement.lang==='fr-CA';
+    document.getElementById('formPanel').innerHTML='<div class="confirm"><div class="check">&#10003;</div><h3>'+(isFr?'Message bien re\u00e7u':'Message received')+'</h3><p>'+(isFr?'Merci. On vous revient personnellement sous 24\u202fh ouvrables. Tout reste strictement confidentiel.':'Thank you. We will get back to you personally within 24 business hours. Everything stays strictly confidential.')+'</p></div>';
+    return false;
+  }
+</script>
+</body>
+</html>
