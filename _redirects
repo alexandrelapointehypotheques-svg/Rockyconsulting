@@ -4,17 +4,18 @@
 #  racine du site, au même endroit que index.html.
 # ============================================================
 
-# --- Adresses propres : servir les fichiers .html sans afficher le .html ---
-/eviter-faillite-pme            /eviter-faillite-pme.html            200
-/restructuration-financiere     /restructuration-financiere.html     200
+# --- Les fichiers .html sont désormais les adresses canoniques ---
+# --- On redirige les anciennes adresses « propres » vers les .html (évite le contenu dupliqué) ---
+/eviter-faillite-pme             /eviter-faillite-pme.html             301!
+/restructuration-financiere      /restructuration-financiere.html      301!
+/restructuration-operationnelle  /restructuration-operationnelle.html  301!
+/en/avoid-bankruptcy             /en/avoid-bankruptcy.html             301!
+/en/financial-restructuring      /en/financial-restructuring.html      301!
+/en/operational-restructuring    /en/operational-restructuring.html    301!
 
-# --- Rediriger les vieilles adresses .html vers les adresses propres (évite le contenu dupliqué) ---
-/index.html                     /                                    301!
-/eviter-faillite-pme.html       /eviter-faillite-pme                 301!
-/restructuration-financiere.html /restructuration-financiere         301!
+# --- Anciennes adresses anglaises jamais publiées : on les rattache aux bonnes pages ---
+/en/avoid-business-bankruptcy    /en/avoid-bankruptcy.html             301!
+/en/operational-turnaround       /en/operational-restructuring.html    301!
 
-# --- Redirections TEMPORAIRES (à retirer une fois les vraies pages créées) ---
-# La page Redressement opérationnel n'existe pas encore : on évite un 404.
-/restructuration-operationnelle /restructuration-financiere          302
-# Les pages anglaises dédiées n'existent pas encore : on renvoie à l'accueil.
-/en/*                           /                                    302
+# --- index.html -> / (accueil) ---
+/index.html                      /                                     301!
